@@ -63,14 +63,20 @@ window.onscroll = function(){
 
 buttonUp.addEventListener("click", scrollUp);
 
+
 //Alerta de "No hay Proyectos"
 let clas = document.querySelector("#IrProyectos");
-var hasClaseDisable = clas.classList.contains( 'disabled' );
-let buscar = document.getElementById("ButtonBuscar")
+let hasClaseDisable = clas.classList.contains( 'disabled' );
+let mensaje_error =document.getElementById("Alert_Disabled")
+    function error_boton(){
 
-buscar.addEventListener("click", function(){
-    if(hasClaseDisable==true){
-    document.getElementById("Alert_Disabled").style.display="block";
+        if(hasClaseDisable==true){
+            mensaje_error.style.display="block";
+            setTimeout(() => {
+                mensaje_error.style.display="none";
+                
+              }, 3000);
+
     }
 
-});
+    }

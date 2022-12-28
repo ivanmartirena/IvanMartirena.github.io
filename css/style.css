@@ -293,6 +293,7 @@
  }
 
  #Alert_Disabled{
+    display: none;
     position: fixed;
     top: 15%;
     z-index: 1;

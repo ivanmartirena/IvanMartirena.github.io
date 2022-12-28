@@ -294,8 +294,7 @@
 
  #Alert_Disabled{
     display: none;
-    position: fixed;
-    top: 15%;
+    top: 10%;
     z-index: 1;
     
  }

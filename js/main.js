@@ -68,7 +68,9 @@ buttonUp.addEventListener("click", scrollUp);
 let clas = document.querySelector("#IrProyectos");
 let hasClaseDisable = clas.classList.contains( 'disabled' );
 let mensaje_error =document.getElementById("Alert_Disabled")
-    function error_boton(){
+let buscar = document.getElementById("BuscadorBlog");
+
+    function buscador(){
 
         if(hasClaseDisable==true){
             mensaje_error.style.display="block";
@@ -77,6 +79,19 @@ let mensaje_error =document.getElementById("Alert_Disabled")
                 
               }, 3000);
 
+    }else{
+       
+        if(buscar.value=="Proyectos"){
+            window.location.href="/Proyectos/proyectos.html";
+        }else 
+            if(buscar.value=="Login"){
+                window.location.href= "/Proyectos/Login/index.html";
+            }else
+                 if(buscar.value==""){
+                 window.location.href= "/Proyectos/Login/index.html";
+
+            }
+        }
     }
 
-    }
+    

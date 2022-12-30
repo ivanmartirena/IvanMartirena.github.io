@@ -1,0 +1,18 @@
+
+@media screen and (min-width: 992px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: url(../img/25976232_halftone_background_12.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+
+}

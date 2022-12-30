@@ -295,7 +295,7 @@
  #Alert_Disabled{
     display: none;
     position: fixed;
-    top: 12%;
+    top: 15%;
     z-index: 1;
     
  }

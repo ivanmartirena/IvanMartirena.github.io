@@ -304,20 +304,14 @@
     display: none;
     transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     position: fixed;
-    right: 2vw;
-    width: 2.2vw;
-    height: 2.5vw;
-    bottom: 2vw;
-    background: url(/icon/arrow-up-circle.svg) no-repeat;
+    right: 3vw;
+    width: 5vw;
+    height: 6vw;
+    bottom: 5vw;
+    background: url(/icon/arrow-up-circle-fill.svg) no-repeat;
     background-size: contain;
  }
- #content_arrow-up:hover{
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    background: url(/icon/arrow-up-circle-fill.svg) no-repeat;
-    background-size: contain; 
 
-}
 
 #ul_contacto{
     overflow-x: scroll;

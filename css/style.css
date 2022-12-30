@@ -319,4 +319,7 @@
 
 }
 
+#ul_contacto{
+    overflow-x: scroll;
+}
 }

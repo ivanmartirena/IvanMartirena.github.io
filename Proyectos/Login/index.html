@@ -10,16 +10,16 @@
   
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
-    <div class="container">
-       
-        <h2 class="text-center">Login</h2>
-       
-            <div class="container_form">
+<body onload="register()">
+    <div class="container-fluid">
+        
+    <div class="container" id="container_total">
+ 
+            <div class="container_form animate__animated animate__fadeInLeft" id="container_form_login">
 
             
             <form>
+                <h2 class="text-center">Login</h2>
                 <div class="form-floating mb-3 ">
                     <input type="email" class="form-control" id="inputUser" placeholder="name@example.com">
                     <label for="floatingInput">Usuario</label>
@@ -35,10 +35,47 @@
                         Contraseña incorrecta.
                       </div>
                 </div>
+                <p class="text-secondary" id="Registrar" >¿Aún no tienes una cuenta?</p>
 
                 <button type="button" class="btn btn-primary" id="button_enviar" onclick="login()">Enviar</button>
             </form>
         </div>
+        <div class="container animate__animated animate__fadeInRight" id="container_imagen"> </div>
+        
+        <div class="container_form  animate__animated animate__fadeInRight" id="container_form_register" style="display: none;">
+
+            
+            <form>
+                <h2 class="text-center">Registrar</h2>
+                <div class="form-floating mb-3 ">
+                    <input type="text" class="form-control  " id="inputName" placeholder="name@example.com">
+                    <label for="floatingInput">Nombre</label>
+                </div>
+                <div class="form-floating mb-3 ">
+                    <input type="email" class="form-control" id="inputUser" placeholder="name@example.com">
+                    <label for="floatingInput">Usuario</label>
+                    <div class="invalid-feedback">
+                        Usuario incorrecto.
+                      </div>
+                </div>
+                
+                <div class="form-floating mb-3 ">
+                    <input type="email" class="form-control  " id="inputPass" placeholder="name@example.com">
+                    <label for="floatingInput">Contraseña</label>
+                    <div class="invalid-feedback">
+                        Contraseña incorrecta.
+                      </div>
+                </div>
+                <div style="display: flex;">
+                    <p class="text-secondary fs-6 text" >¿Ya tienes una cuenta? </p>
+                    <p class="text-info" id="iniciar_sesion" style="margin-left: 5px;">Ingresa aqui</p>
+                </div>
+               
+
+                <button type="button" class="btn btn-primary" id="button_enviar" onclick="login()">Enviar</button>
+            </form>
+        </div>
+            </div>
 
 
     </div>

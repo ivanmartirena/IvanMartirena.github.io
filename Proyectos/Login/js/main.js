@@ -38,3 +38,29 @@ function login(){
         }
         });
 }
+
+function register(){
+    let button_register = document.getElementById("Registrar");
+    let container_login = document.getElementById("container_form_login");
+    let container_register = document.getElementById("container_form_register");
+    let container_imagen = document.getElementById("container_imagen");
+
+    button_register.addEventListener('click', function(){
+        container_imagen.classList.add('toggle');
+        container_login.style.display="none";
+        container_register.style.display="block";
+        container_register.style.marginLeft="10px";
+        container_register.classList.add('toggle');
+
+    })
+
+    let button_iniciar_sesion = document.getElementById("iniciar_sesion");
+
+    button_iniciar_sesion.addEventListener('click', function(){
+        container_register.style.display="none";
+        container_login.style.display="block";   
+        container_imagen.classList.remove('animate__fadeInRight','toggle');
+        container_imagen.classList.add('animate__fadeInLeft');
+        container_register.classList.remove('toggle');
+    })
+}

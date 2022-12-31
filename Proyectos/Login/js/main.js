@@ -45,7 +45,7 @@ function register(){
     let container_register = document.getElementById("container_form_register");
     let container_imagen = document.getElementById("container_imagen");
 
-    button_register.addEventListener('click', function(){
+    button_register.addEventListener('click', function(){ //Texto de NO tienes cuenta
         container_imagen.classList.add('toggle');
         container_login.style.display="none";
         container_register.style.display="block";
@@ -56,7 +56,7 @@ function register(){
 
     let button_iniciar_sesion = document.getElementById("iniciar_sesion");
 
-    button_iniciar_sesion.addEventListener('click', function(){
+    button_iniciar_sesion.addEventListener('click', function(){ //Texto de iniciar sesion
         container_register.style.display="none";
         container_login.style.display="block";   
         container_imagen.classList.remove('animate__fadeInRight','toggle');

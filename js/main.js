@@ -1,3 +1,6 @@
+
+document.oncontextmenu = function(){return false;}
+
 function header(){
     window.addEventListener("scroll", function(){
         var header = document.querySelector(".navbar");

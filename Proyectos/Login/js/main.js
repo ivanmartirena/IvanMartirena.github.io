@@ -49,7 +49,6 @@ function register(){
         container_imagen.classList.add('toggle');
         container_login.style.display="none";
         container_register.style.display="block";
-        container_register.style.marginLeft="10px";
         container_register.classList.add('toggle');
 
     })

@@ -14,6 +14,7 @@
     }
 
     #container_total{
+        transition: 1s ease;
         position: absolute;
         display: flex;
         width: 50vw;

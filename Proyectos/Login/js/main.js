@@ -41,6 +41,7 @@ function login(){
 
 function register(){
     let button_register = document.getElementById("Registrar");
+    let container_total = document.getElementById("container_total");
     let container_login = document.getElementById("container_form_login");
     let container_register = document.getElementById("container_form_register");
     let container_imagen = document.getElementById("container_imagen");
@@ -50,6 +51,8 @@ function register(){
         container_login.style.display="none";
         container_register.style.display="block";
         container_register.classList.add('toggle');
+        container_total.style.height="75vh";
+        container_total.style.marginTop="2vw";
 
     })
 
@@ -57,7 +60,8 @@ function register(){
 
     button_iniciar_sesion.addEventListener('click', function(){ //Texto de iniciar sesion
         container_register.style.display="none";
-        container_login.style.display="block";   
+        container_login.style.display="block";  
+        container_total.style.height="65vh"; 
         container_imagen.classList.remove('animate__fadeInRight','toggle');
         container_imagen.classList.add('animate__fadeInLeft');
         container_register.classList.remove('toggle');

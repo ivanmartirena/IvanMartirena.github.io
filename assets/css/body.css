@@ -1,0 +1,81 @@
+:root{
+    --paster_gray: #C7D5C8;
+    --dark_blue: #626CA1;
+    --han_blue: #587BD8;
+    --palatinate_blue: rgb(61,59,237);
+    --charcoal: #3A3E55;
+
+}
+html{
+    scroll-behavior: smooth;
+    -webkit-user-select: none;
+    -webkit-user-zoom: none ;
+}
+
+@media screen and (min-width: 1024px) {
+
+    #contenido_body{
+        margin: auto;
+        width: 99vw;
+        min-width: 1300px;
+        height: 90vh;
+        background-image: url(/img/mockup_card_laptop_tshirt.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #contenido_body > img.contenido_body_logo_img1{
+        width: 150px;
+        height: 40px;
+        position: relative;
+        top: 44%;
+        left: 31.2vw;
+        
+    }
+    #contenido_body > img.contenido_body_logo_img2{
+        width: 150px;
+        height: 40px;
+        position: relative;
+        top: 68%;
+        left: 3.8vw;
+        transform: rotate(340deg);
+    }
+}
+@media only screen and (orientation: portrait) { /*Vertical*/
+    @media screen and (min-width: 320px) and (max-width: 480px) { /*Celular*/
+        /*TODO RELACIONADO background del body*/
+        body{
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+        #contenido__header_body{
+            margin: auto;
+            width: 100%;
+            height: 92.8vh;
+            background-image: url(/img/mockup_card_laptop_tshirt.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position-y: center;
+            position: relative;
+            z-index: -1;
+            
+        }
+        #contenido__header_body > img.contenido_header_body_logo_img1{
+            z-index: 0;
+            width: 40px;
+            height: 10px;
+            position: relative;
+            top: 46%;
+            left: 31.5%;
+        }
+        #contenido__header_body >  img.contenido_header_body_logo_img2{
+            display: none;
+        }
+    }
+    /*CONTENIDO DESPUES DEL HEADER*/
+    div.contenedor_all{
+        width: 100vw;
+        height: 100vh;
+    }
+}

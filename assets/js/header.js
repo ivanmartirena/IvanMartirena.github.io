@@ -4,4 +4,5 @@ var menu = document.getElementById("menu");
 iconoMenu.addEventListener("click", mostrar_menu);
 function mostrar_menu(){
     menu.classList.toggle("menu_lateral")
+    iconoMenu.classList.toggle("icono_menu_rotar");
 }

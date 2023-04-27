@@ -13,8 +13,14 @@ html{
 }
 
 @media screen and (min-width: 1024px) {
-
-    #contenido_body{
+    body{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    #contenido_header_body{
         margin: auto;
         width: 99vw;
         min-width: 1300px;
@@ -23,33 +29,40 @@ html{
         background-size: cover;
         background-repeat: no-repeat;
     }
-    #contenido_body > img.contenido_body_logo_img1{
+    #contenido_header_body> img.contenido_header_body_logo_img1{
         width: 150px;
         height: 40px;
         position: relative;
         top: 44%;
         left: 31.2vw;
+        z-index: 0;
         
     }
-    #contenido_body > img.contenido_body_logo_img2{
+    #contenido_header_body > img.contenido_header_body_logo_img2{
         width: 150px;
         height: 40px;
         position: relative;
         top: 68%;
         left: 3.8vw;
         transform: rotate(340deg);
+        z-index: 0;
     }
+        /*CONTENIDO DESPUES DEL HEADER*/
+        div.contenedor_all{
+            width: 100vw;
+            height: 100vh;
+        }
 }
 @media only screen and (orientation: portrait) { /*Vertical*/
     @media screen and (min-width: 320px) and (max-width: 480px) { /*Celular*/
-        /*TODO RELACIONADO background del body*/
+        /*TODO RELACIONADO con la caratula del body*/
         body{
             width: 100%;
             height: 100%;
             overflow-x: hidden;
             overflow-y: scroll;
         }
-        #contenido__header_body{
+        #contenido_header_body{
             margin: auto;
             width: 100%;
             height: 92.8vh;
@@ -61,7 +74,7 @@ html{
             z-index: -1;
             
         }
-        #contenido__header_body > img.contenido_header_body_logo_img1{
+        #contenido_header_body > img.contenido_header_body_logo_img1{
             z-index: 0;
             width: 40px;
             height: 10px;
@@ -69,8 +82,13 @@ html{
             top: 46%;
             left: 31.5%;
         }
-        #contenido__header_body >  img.contenido_header_body_logo_img2{
-            display: none;
+        #contenido_header_body > img.contenido_header_body_logo_img2{
+            width: 45px;
+            height: 12px;
+            position: relative;
+            top: 52%;
+            left: 3.7vw;
+            transform: rotate(340deg);
         }
     }
     /*CONTENIDO DESPUES DEL HEADER*/

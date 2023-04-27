@@ -22,8 +22,8 @@ html{
             height: 10vh;
             background-color: var(--charcoal);
             overflow: hidden;
-            position: -webkit-fixed;
-            position: fixed;
+            position: -webkit-sticky;
+            position: sticky;
             z-index: 1;
         }
         header > nav {

@@ -48,14 +48,14 @@ html{
         z-index: 0;
     }
         /*CONTENIDO DESPUES DEL HEADER*/
-        div.contenedor_all{
+        div.contenedor_all_conocimiento{
             width: 100vw;
             height: 100vh;
         }
-        div.contenedor_all h2.title{
+        div.contenedor_all_conocimiento h2.title{
             text-align: center;
         }
-        div.contenedor_all > div.contenedor_conocimiento{
+        div.contenedor_all_conocimiento > div.contenedor_conocimiento{
             width: 90vw;
             height: 90vh;
             border: 1px solid black;
@@ -68,24 +68,45 @@ html{
             align-items: center;
             justify-content: center;
         }
-        div.contenedor_all > div.contenedor_conocimiento > div.conocimiento{
+        div.contenedor_all_conocimiento > div.contenedor_conocimiento > div.conocimiento{
             max-width: 300px;
             height: 400px;
             /* border: 1px solid black; */
             border-radius: 5px;
             box-shadow: 0px 0px 5px 0px rgba(49, 53, 49, 0.678);
             overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             background-color: var(--charcoal);
         }
-        div.contenedor_all > div.contenedor_conocimiento > div.conocimiento > img{
-            width: 200px;
-            height: 200px;
+        div.conocimiento > div.imagen_conocimiento{
+            position: relative;
+            margin: 10px auto;
+            width: 235px;
+            height: 100px;
+            border: 1px solid red;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            object-fit: cover;
+
+        }
+     div.conocimiento > div.imagen_conocimiento > img{
+            width: 140px;
+            height: 100px;
             object-fit: contain;
             padding: 5px;
         }
+     div.conocimiento > h3.title_conocimiento{
+                    text-align: center;
+                    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    color: white;
+    }
+    div.conocimiento > div.descripcion{
+        width: 90%;
+        height: 55%;
+        border: 1px solid blue;
+        padding: 5px;
+        margin: auto;
+    }
 }
 @media only screen and (orientation: portrait) { /*Vertical*/
     @media screen and (min-width: 320px) and (max-width: 480px) { /*Celular*/
@@ -124,9 +145,72 @@ html{
             left: 3.7vw;
             transform: rotate(340deg);
         }
+               /*CONTENIDO DESPUES DEL HEADER*/
+               div.contenedor_all_conocimiento{
+                width: 100vw;
+                height: 100vh;
+                z-index: 0;
+            }
+            div.contenedor_all_conocimiento h2.title{
+                text-align: center;
+            }
+            div.contenedor_all_conocimiento > div.contenedor_conocimiento{
+                width: 90%;
+                
+                border: 1px solid black;
+                margin: auto;
+                overflow-x: hidden;
+              padding-top: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+               
+            }
+            div.contenedor_all_conocimiento > div.contenedor_conocimiento > div.conocimiento{
+                max-width: 90%;
+                height: 500px;
+                /* border: 1px solid black; */
+                border-radius: 5px;
+                box-shadow: 0px 0px 5px 0px rgba(49, 53, 49, 0.678);
+                overflow-x: hidden;
+                background-color: var(--charcoal);
+            }
+            div.conocimiento > div.imagen_conocimiento{
+                position: relative;
+                margin: 10px auto;
+                width: 235px;
+                height: 100px;
+                border: 1px solid red;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                object-fit: cover;
+                z-index: 0;
+    
+            }
+         div.conocimiento > div.imagen_conocimiento > img{
+                width: 140px;
+                height: 100px;
+                object-fit: contain;
+                padding: 5px;
+                z-index: 0;
+            }
+         div.conocimiento > h3.title_conocimiento{
+                        text-align: center;
+                        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        color: white;
+        }
+        div.conocimiento > div.descripcion{
+            width: 90%;
+            height: 55%;
+            border: 1px solid blue;
+            padding: 5px;
+            margin: auto;
+        }
     }
     /*CONTENIDO DESPUES DEL HEADER*/
-    div.contenedor_all{
+    div.contenedor_all_conocimiento{
         width: 100vw;
         height: 100vh;
     }

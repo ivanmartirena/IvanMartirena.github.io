@@ -138,6 +138,7 @@ html{
             height: 7.2vh;
             background-color: var(--charcoal);
             position: fixed;
+            z-index: 1;
             
         }
         .icono_menu{

@@ -31,6 +31,6 @@ window.onload = function () {
 //Redireccionar segun donde hizo click
 let e_commerce = document.getElementById("e-commerce");
 e_commerce.addEventListener("click", function(){
-  window.href="ivanmartirena.github.io/proyecto_veterinaria";
+  window.location.href="ivanmartirena.github.io/proyecto_veterinaria";
 });
 };
